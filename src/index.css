@@ -1,0 +1,92 @@
+@import url('https://fonts.cdnfonts.com/css/ethnocentric');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins';
+    color: rgb(226, 232, 240);
+}
+
+h1,h2,h3,h4,h5,h6,.eth{
+    font-family: 'Ethnocentric';
+}
+
+h1 {
+    font-size: 50px;
+  }
+
+h2 {
+    font-size: 40px;
+  }
+
+h3 {
+    font-size: 32px;
+  }
+
+h4 {
+    font-size: 24px;
+  }
+
+h5 {
+    font-size: 20px;
+  }
+
+h6 {
+    font-size: 16px;
+  }
+
+.text-gradient-cyan-to-purple-r{
+    background: linear-gradient(to right,#00f2fe 0%, #1571c2 33%, #5c0091 66%, #d400ff 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.text-gradient-blue-to-purple-r{
+    background: linear-gradient(to right, #1571c2, #5c0091 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.gradient-cyan-to-purple-r{
+    background: linear-gradient(to right,#00f2fe 0%, #1571c2 33%, #5c0091 66%, #d400ff 100%);
+}
+
+.gradient-cyan-to-purple-r-light{
+    background: linear-gradient(to right,#00f2fe 0%, #d400ff 100%);
+}
+
+.gradient-cyan-to-purple-tr{
+    background: linear-gradient(to top right,#00f2fe 0%, #1571c2 33%, #5c0091 66%, #d400ff 100%);
+}
+
+.gradient-purple-to-cyan-l{
+    background: linear-gradient(to left,#00f2fe 0%, #1571c2 33%, #5c0091 66%, #d400ff 100%);
+}
+
+.gradient-purple-to-cyan-bl{
+    background: linear-gradient(to bottom left,#00f2fe 0%, #1571c2 33%, #5c0091 66%, #d400ff 100%);
+}
+
+.circular-purple-gradient {
+    background: radial-gradient(circle at center, #30004b, #0e0016 );
+}
+
+.glassmorphism {
+  background: linear-gradient(
+  to bottom left,
+  rgba(0, 242, 254, 0.6) 0%,
+  rgba(0, 136, 255, 0.4) 33%,
+  rgba(162, 0, 255, 0.4) 66%,
+  rgba(212, 0, 255, 0.6) 100%
+);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 16px 0 rgba(8, 158, 199, 0.3);
+}
