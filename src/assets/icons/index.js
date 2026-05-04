@@ -6,6 +6,7 @@ import figma from './figma.svg'
 import firebase from './firebase.svg'
 import git from './git.svg'
 import github from './github.svg'
+import githubwhite from './githubwhite.png'
 import html from './html.svg'
 import java from './java.svg'
 import javascript from './javascript.svg'
@@ -23,6 +24,15 @@ import outlook from './outlook.svg'
 import gmail from './gmail.svg'
 import behance from './behance.svg'
 import behancedark from './behancedark.png'
+import unity from './unity.png'
+import evotech from './evotech.jpg'
+import ara from './ara.png'
+import nodejs from './node-js.svg'
+import postgresql from './postgresql.png'
+import prisma from './prisma.png'
+import postman from './postman.png'
+import outsystems from './outsystems.png'
+import lucide from './lucide.svg'
 
 export {
     androidstudio,
@@ -33,6 +43,7 @@ export {
     firebase,
     git,
     github,
+    githubwhite,
     html,
     java,
     javascript,
@@ -49,5 +60,14 @@ export {
     outlook,
     gmail,
     behance,
-    behancedark
+    behancedark,
+    unity,
+    evotech,
+    ara,
+    nodejs,
+    postgresql,
+    prisma,
+    postman,
+    outsystems,
+    lucide
 }

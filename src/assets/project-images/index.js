@@ -9,6 +9,9 @@ import mentaltracker from './mentaltracker.png'
 import candiborobudur from './candiborobudur.png'
 import axforasset from './axforasset.png'
 import surfle from './surfle.png'
+import dungeonhunter from './dungeonhunter.jpg'
+import arunikatms from './arunikatms.png'
+
 export {
     schedulemate,
     solarsystem,
@@ -20,5 +23,7 @@ export {
     mentaltracker,
     candiborobudur,
     axforasset,
-    surfle
+    surfle,
+    dungeonhunter,
+    arunikatms
 }

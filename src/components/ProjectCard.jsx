@@ -7,12 +7,21 @@ const ProjectCard = ({num}) => {
     if (!num) {
         num = projects.length;
       }
+    const getVariants = (timer) => {
+        if (timer === 1) {
+          return fadeIn("left", "tween", 0, 1);
+        } else if (timer === 2) {
+          return fadeIn("top", "tween", 0.3, 1);
+        } else {
+          return fadeIn("right", "tween", 0, 1);
+        }
+      };
     return (
         <div className="flex flex-wrap justify-center gap-10 lg:gap-20 mb-12 lg:my-10">
             {projects.slice(0,num).map((project) => (
             <motion.div
             key={project.name}
-            variants={fadeIn("bottom", "spring", 0.3 * project.timer, 1)}
+            variants={getVariants(project.timer)}
             initial= "hidden"
             whileInView="visible"
             viewport={{once: true}} 
@@ -38,8 +47,9 @@ const ProjectCard = ({num}) => {
                         <div className='mt-5 text-left'>
                           <p className='eth tracking-wider text-[20px]'>{project.name}</p>
                           <p className='eth text-secondary text-[12px]'>{project.type}</p>
-                          <p className='mt-1 eth italic tracking-widest text-secondary text-[8px]'>Tools: {project.tools}</p>
-                          <p className='mt-4 text-secondary text-[12px] font-semibold'>{project.description}</p>
+                          <p className='mt-1 eth italic tracking-widest text-secondary text-[8px]'><span className="tracking-normal">Tools: </span>{project.tools}</p>
+                          <p className='mt-2 text-secondary text-[12px] font-semibold'>{project.description}</p>
+                          <p className='mt-4 eth italic text-secondary text-[10px]'>{project.contribution}</p>
                         </div>
                     </div>
             </Tilt>

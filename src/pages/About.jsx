@@ -1,5 +1,5 @@
 import Image from '../assets/foto-diri.png'
-import { educations } from "../constants"
+import { educations, experience } from "../constants"
 import { motion } from 'framer-motion'
 import { fadeIn, smallToBig } from "../variants";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -20,8 +20,8 @@ const About = () => {
           whileInView="visible"
           viewport={{once: false}} 
           className='lg:max-w-[80%] tracking-wide'>
-            A 5th semester university student in Indonesia majoring in computer science and studying interactive multimedia as its streaming course.
-            Who have a passion in web development especially in the front end side of things. Creating beautiful designs is a must.
+            Computer Science Graduate dedicated to building scalable web applications with a focus on intuitive Front-End experiences and robust Back-End integration.
+            Passionate about transforming complex data into high-performance, user-centric digital solutions
           </motion.p>
           <div className='flex flex-col gap-3'>
             <Headline text={"Skills"} from={"top"} type={"tween"}/>
@@ -42,11 +42,45 @@ const About = () => {
       </div>
 
 
-      <div className='mb-20'>
+      <div className='flex flex-col gap-10 mt-20 mb-10'>
+        <Headline text={"Work "} coloredText={"Experience"} from={"left"} type={"tween"}/>
+        <VerticalTimeline>
+          {experience.map((exp) => (
+            <VerticalTimelineElement
+            key={exp.name}
+            contentStyle={{ background: '#0e0016', borderBottom: '8px', borderStyle: 'solid', borderBottomColor: '#b461f3'}}
+            contentArrowStyle={{ borderRight: '7px solid #0e0016'}}
+            date={exp.date}
+            iconStyle={{background: exp.iconBg}}
+            icon={
+              <div className='flex justify-center items-center w-full h-full'>
+                <img className="w-[80%]" src={exp.iconUrl} />
+              </div>
+            }>
+              <div className="">
+                <h3 className='text-[18px] lg:text-[28px] font-bold'>{exp.jobTitle}</h3>
+                <p className='text-[14px] lg:text-[18px] text-white-100 font-medium'>{exp.name}</p>
+                <ul className="mt-5 list-disc ml-5 space-y-4">
+                  {exp.points.map((point, index) => (
+                    <li key={`experience-point-${index}`} className="text-white-100 text-[14px] pl-1 tracking-wider leading-6">
+                      <strong className="text-[16px] block mb-1 text-[#b461f3]">{point.title}</strong>
+                      <span dangerouslySetInnerHTML={{ __html: point.desc }} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </VerticalTimelineElement>
+          ))}
+        </VerticalTimeline>
+      </div>
+
+      <div className='flex flex-col gap-10 mb-20'>
+        <Headline text={"Education "} coloredText={"Journey"} from={"left"} type={"tween"}/>
         <VerticalTimeline>
           {educations.map((education) => (
             <VerticalTimelineElement
-            contentStyle={{ background: '#0e0016'}}
+            key={education.name}
+            contentStyle={{ background: '#0e0016', borderBottom: '8px', borderStyle: 'solid', borderBottomColor: '#b461f3'}}
             contentArrowStyle={{ borderRight: '7px solid #0e0016'}}
             date={education.date}
             iconStyle={{background: education.iconBg}}
@@ -56,9 +90,10 @@ const About = () => {
               </div>
             }>
               <div className="">
-                <h3 className='text-[14px] lg:text-[32px]'>{education.name}</h3>
-                <p className='leading-4 tracking-wide'>{education.description}</p>
-                <p>{education.point}</p>
+                <h3 className='text-[18px] lg:text-[28px] font-bold'>{education.name}</h3>
+                <p className='mt-1 text-[14px] lg:text-[18px] text-white-100 font-medium'>{education.date}</p>
+                <p className='mt-3 leading-6 tracking-wide text-[14px] lg:text-[16px]'>{education.description}</p>
+                <p className='mt-2 text-[#b461f3] font-semibold'>{education.point}</p>
               </div>
             </VerticalTimelineElement>
           ))}

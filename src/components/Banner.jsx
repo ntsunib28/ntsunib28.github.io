@@ -24,11 +24,11 @@ const Banner = () => {
                     className='eth mb-6 text-[15px] lg:text-[25px]'>
                         <span className='mr-2'>I am a</span>
                         <TypeAnimation sequence={[
-                            'Developer',
+                            'Fullstack Developer',
                             2000,
-                            'Designer',
+                            'UI/UX Designer',
                             2000,
-                            'Student',
+                            'Fresh Graduate',
                             2000
                         ]}
                         speed={50}
@@ -42,9 +42,8 @@ const Banner = () => {
                     whileInView="visible"
                     viewport={{once: false}} 
                     className='mb-8 max-w-lg mx-auto lg:mx-0'>
-                        Hi, I am Nicholas Theodore, a 5th-semester university student majoring
-                        in computer science. I have a passion in web development and
-                        I also like to edit photos and videos on my sparetime.
+                        Computer Science Graduate dedicated to building scalable web applications with a focus on intuitive Front-End experiences and robust Back-End integration.
+                        Passionate about transforming complex data into high-performance, user-centric digital solutions
                     </motion.p>
                     <Button isOnce={false} text={"Contact Me"} link={"/contact"} from={"bottom"} type={"tween"}/>
                 </div>
