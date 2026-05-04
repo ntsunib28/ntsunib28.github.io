@@ -300,7 +300,7 @@ export const projects = [
         description: 'A comprehensive Transportation Management System designed to digitize logistics operations. Features include Excel data processing, container tracking, invoicing, and proactive daily reporting via Resend API.',
         design: '',
         source: '',
-        link: '/',
+        link: 'https://www.linkedin.com/posts/nicholas-theodore-nt_webdevelopment-freshgraduate-buildinpublic-ugcPost-7457034155088838656-QzYY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaI7N4BEqjlE2pbscAXZ_cPDeK8q1_L1jk',
         icon: linkedin
     },
     {
