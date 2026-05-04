@@ -180,7 +180,7 @@ export const experience = [
         name: 'PT. Arunika Rejeki Abadi',
         iconUrl: ara,
         iconBg: '#dfdfdf',
-        jobTitle: 'Full-Stack Developer | Custom Logistics & Shipment Tracking System | Independent Project (Family Business)',
+        jobTitle: 'Full-Stack Developer | Custom Logistics & Shipment Tracking System',
         points: [
             {
                 title: 'Automated Data Ingestion',
