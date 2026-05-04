@@ -14,7 +14,7 @@ const Projects = () => {
           whileInView="visible"
           viewport={{once: true, amount: 0.7}}
           className='tracking-wide'>
-            Here, are some of my works that I made. Feel free to explore. You click the card with a github icon it will open a new tab containing my repository for the respective project</motion.p>
+            Here, are some of my works that I made. Feel free to explore. You click the card with a github icon it will open a new tab containing my repository the selected project</motion.p>
       </div>
       <ProjectCard />
     </section>

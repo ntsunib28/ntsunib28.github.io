@@ -19,7 +19,7 @@ const ProjectCard = ({num}) => {
             onClick={() => window.open
             (project.link, "_blank")}
             whileHover={{ cursor: 'pointer' }}
-            className="lg:w-[25%] h-auto">
+            className="flex-grow-0 flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
                 <Tilt
                     options={{
                     max: 20,

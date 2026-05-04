@@ -6,7 +6,7 @@ import Button from './Button';
 
 const Banner = () => {
   return (
-    <section className="flex items-center justify-center min-h-[90vh]">
+    <section className="flex items-center justify-center min-h-screen">
         <div className="container mx-auto">
             <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-10'>
                 <div className='flex flex-col items-center lg:items-start lg:flex-1 text-center lg:text-justify'>
